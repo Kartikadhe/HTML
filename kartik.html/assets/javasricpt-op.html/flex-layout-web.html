@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex Layout</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .title {
+            font-size: 60px;
+            color: aqua;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .desription {
+            font-size: 30px;
+            color: red;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .flex-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-self: space-evenly;
+        }
+
+        .flex-item {
+            width: 30%;
+            height: 80%;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .color-1 {
+            background-color: aqua;
+        }
+
+        .color-2 {
+            background-color: red;
+        }
+
+        .color-3 {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <span class="title">Three Equal-width box Layout</span>
+        <br>
+        <span class="description">This example shows three boxes side by side using CSS Flexbox</span>
+        <div class="flex-container">
+            <div class="flex-item color-1">Box1</div>
+            <div class="flex-item color-2">Box2</div>
+            <div class="flex-item color-3">Box3</div>
+        </div>
+    </div>
+</body>
+
+</html>

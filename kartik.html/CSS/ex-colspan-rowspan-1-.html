@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ex rowspan in class</title>
+</head>
+<style>
+    table {
+        height: 600px;
+        width: 100%;
+        background-color: red;
+    }
+
+    td {
+        height: 200px;
+        width: 300px;
+        border-style: 30%;
+    }
+
+    .row-1 {
+        bottom: pink;
+    }
+
+    .row-2 {
+        background-color: blueviolet;
+    }
+
+    .row-3 {
+        background-color: orange;
+    }
+
+    .row-4 {
+        background-color: greenyellow;
+    }
+
+    .row-5 {
+        background-color: gold;
+    }
+</style>
+
+<body>
+    <table>
+        <tr >
+            <!--row-1-->
+            <td colspan="5" class="row-1">1</td>
+
+        </tr>
+        <tr class="row-2">
+            <!--row-2-->
+            <td rowspan="4">5</td>
+
+        </tr>
+        <!--row-3-->
+        <tr class="row-3">
+            <td colspan="3">9</td>
+        </tr>
+        <!--row-4-->
+        <tr class="row-4">
+            <td colspan="3">11</td>
+        </tr>
+        <!--row-5-->
+        <tr class="row-5">
+            <td colspan="3">16</td>
+        </tr>
+    </table>
+</body>
+
+</html>

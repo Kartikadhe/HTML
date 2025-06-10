@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>rowspan</title>
+        <style>
+            table{
+           height: 400px;
+           width: 100%;
+           background-color: red;
+            }
+            td{
+                height: 300px;
+                width: 100%;
+                text-align: center;
+                background-color:blue;
+            }
+        </style>
+        <body>
+        <table>
+            <!--1-row-->
+            <tr>
+                <td colspan="2">1</td>
+               
+                <td colspan="2">3</td>
+                
+            </tr>
+            <!--2-row-->
+          <tr>
+            
+            <td colspan="">7</td>
+            <td>8</td>
+          </tr>
+          <!--3-row-->
+          <tr>
+            <td colspan="2">9</td>
+            <td colspan="2">10</td>
+            
+          </tr>
+          <!--4-row-->
+          <tr>
+            
+            <td rowspan="2">16</td>
+          </tr>
+          </table>
+        </body>
+    </head>
+</html>
